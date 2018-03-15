@@ -14,7 +14,7 @@
   <body ng-app="Izypay" ng-controller="IzypayCtrl">
     <div class="container">
         <ul class="nav nav-tabs spacer">
-          <li class="active"><a href="#">Tous les évènements</a></li>
+          <li class="active"><a href="#">Toutes les transactions</a></li>
           <li><a href="#">Les 5 évènements ayant le plus de transactions</a></li>
         </ul>
         <table class="table table-striped spacer">
@@ -23,6 +23,14 @@
               <th>Identifiant</th>
               <th>Nom de l'évènement</th>
               <th>Merchant</th>
+              <th>Terminal</th>
+              <th>Status</th>
+              <th>Identifiant carte</th>
+              <th>Type de carte</th>
+              <th>Montant</th>
+              <th>Devise</th>
+              <th>Pays</th>
+              <th>Date</th>
             </tr>
           </thead>
           <tbody>
@@ -30,6 +38,14 @@
               <td>{{event.id}}</td>
               <td>{{event.event_name}}</td>
               <td>{{event.merchant}}</td>
+              <td>{{event.terminal}}</td>
+              <td>{{event.status}}</td>
+              <td>{{event.card_id}}</td>
+              <td>{{event.card_type}}</td>
+              <td>{{event.amount}}</td>
+              <td>{{event.currency}}</td>
+              <td>{{event.country}}</td>
+              <td>{{event.created}}</td>
             </tr>
           </tbody>
         </table>
