@@ -1000,4 +1000,13 @@ angular.module("Izypay", [])
 {"id":998,"event_name":"Regrant","merchant":"Wikizz","terminal":"78d82827-42ad-4cdb-a232-ff8529743893","status":true,"card_id":"5409369391127326","card_type":"diners-club-us-ca","amount":"€11,94","currency":"Yuan Renminbi","country":"CN","created":"7/30/2017"},
 {"id":999,"event_name":"Lotstring","merchant":"Youspan","terminal":"5a3e338a-b570-4604-85a3-d3cbe93366bd","status":false,"card_id":"630420850198169413","card_type":"maestro","amount":"£68.69","currency":"Ruble","country":"RU","created":"12/16/2017"},
 {"id":1000,"event_name":"Sub-Ex","merchant":"Rhynoodle","terminal":"d72db973-c80d-4492-94d4-f5a2b7a6ed13","status":false,"card_id":"676329335146230496","card_type":"maestro","amount":"$93.33","currency":"Krone","country":"NO","created":"3/1/2018"}]
+
+$scope.select = 1;
+$scope.selectionTout = function(){
+  $scope.select=1;
+}
+$scope.selection5 = function(){
+  $scope.select=5;
+}
+
 });
