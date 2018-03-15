@@ -1008,31 +1008,48 @@ $scope.selectionTout = function(){
 $scope.selection5 = function(){
   $scope.select=5;
 }
+var i = 4;
 
-/*$scope.triMax= function(){
-        return function(){
-          var tab=[];
+var triMax = function(){
           var compteur=1;
-          var eventMax;
+          var evente;
           var max=0;
           var name;
-          for(var i = 0; i<events.length;i++){
-                name = events[i].event_name;
-                for(var j =0; j<events.length;j++){
-                    if (name==events[j].event_name){
-                      compteur++;
-                    }
-                })
-                if (compteur>max){
-                  max=compteur;
-
-
+          var tab=[];
+          var name2;
+          var j=0;
+          var ans =true;
+          var ans2;
+          while(tab.length<5){
+          for(var i = 0; i<1000;i++){
+                name = $scope.events[i].event_name;
+                for(var k=0; k<tab.length;k++){
+                  if (name==tab[k]){
+                    ans=false;
+                  }
                 }
-                tab.push(event);
-                compteur=1;
+                if (ans==true){
+                    for(var j =0; j<1000;j++){
+                        name2=$scope.events[j].event_name;
+                        if (name==name2){
+                            compteur++;
+                          }
+                      }
+                        if (compteur>max){
+                            max=compteur;
+                            evente=i;
+                          }
+                    compteur=1;
+                }
+                ans=true;
 
-          })
-          return tab;
         }
-}*/
+
+          tab.push($scope.events[evente].event_name);
+          max=0;
+          }
+
+        return tab;
+        }
+
 });
