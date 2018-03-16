@@ -55,10 +55,8 @@
           </tbody>
         </table>
       </div>
-      <div class="afficheNone spacer" ng-class="{affiche : select==5}">
-        <div class="alert alert-info">Les évènements ayants le plus de transactions sont, dans l'odre décroissant : <strong>Regrant</strong>, <strong>Zoolab</strong>, <strong>Tin</strong>, <strong>Quo lux</strong> et <strong>Tempsoft</strong>.</div>
-
-        </div>
+      <div class="afficheNone" ng-class="{affiche : select==5}">
+<div class="alert alert-info">Les évènements ayants le plus de transactions sont, dans l'odre décroissant : <strong>Regrant</strong>, <strong>Zoolab</strong>, <strong>Tin</strong>, <strong>Quo lux</strong> et <strong>Tempsoft</strong>.</div>
         <table class="table table-striped" ng-repeat="event in tab" >
           <caption>Transactions de l'évènement : {{event}}</caption>
           <thead>
