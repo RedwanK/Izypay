@@ -16,3 +16,8 @@ li:hover
 {
   display : inline-block;
 }
+
+body
+{
+  background-color:white;
+}
