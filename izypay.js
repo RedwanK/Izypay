@@ -1052,9 +1052,9 @@ var triMax = function(){
         return tab;
         }
 $scope.tab=triMax();
-var base=0;
-$scope.increment= function(){
-  $scope.filtreT=tab[base];
-  base++;
+$scope.base=0;
+var increment = function(){
+  $scope.filtreT=$scope.tab[$scope.base];
+  $scope.base++;
 }
 });
