@@ -53,11 +53,11 @@
         </table>
       </div>
       <div class="afficheNone spacer" ng-class="{affiche : select==5}">
+        <div class="alert alert-info">Les évènements ayants le plus de transactions sont : <strong>Regrant</strong>, <strong>Zoolab</strong>, <strong>Tin</strong>, <strong>Quo lux</strong> et <strong>Tempsoft</strong>.</div>
 
+        </div>
         <table class="table" ng-repeat="event in tab" >
           <caption>Transactions de l'évènement : {{event}}</caption>
-          <script type="text/javascript" src="izypay.js">$scope.increment();</script>
-          filtre : {{filtreT}}
           <thead>
             <th>Identifiant</th>
             <th>Merchant</th>
@@ -71,7 +71,7 @@
             <th>Date</th>
           </thead>
           <tbody>
-            <tr ng-repeat="transac in event">
+            <tr ng-repeat="transac in events | filter : event">
               <td>{{transac.id}}</td>
               <td>{{transac.event_name}}</td>
               <td>{{transac.merchant}}</td>
