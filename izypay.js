@@ -1008,7 +1008,6 @@ $scope.selectionTout = function(){
 $scope.selection5 = function(){
   $scope.select=5;
 }
-var i = 4;
 
 var triMax = function(){
           var compteur=1;
