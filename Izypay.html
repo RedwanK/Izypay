@@ -22,7 +22,7 @@
           <li class="cliquable" ng-class="{active: select==1}"><a ng-click="selectionTout()">Toutes les transactions</a></li>
           <li class="cliquable" ng-class="{active: select==5}"><a ng-click="selection5()">Les 5 évènements ayant le plus de transactions</a></li>
         </ul>
-        <input type="text" ng-model="filtreP" placeholder="Recherche par mot-clé" class="spacer form-control">
+        <input type="text" ng-model="filtreP" placeholder="Recherche par mot-clé" class="spacer form-control afficheNone" ng-class="{affiche : select==1}">
         <div class="afficheNone" ng-class="{affiche : select==1}">
         <table class="table table-striped spacer ">
           <thead>
@@ -60,7 +60,7 @@
       <div class="afficheNone" ng-class="{affiche : select==5}">
 <div class="alert alert-info">Les évènements ayants le plus de transactions sont, dans l'odre décroissant : <strong>Regrant</strong>, <strong>Zoolab</strong>, <strong>Tin</strong>, <strong>Quo lux</strong> et <strong>Tempsoft</strong>.</div>
         <table class="table table-striped" ng-repeat="event in tab" >
-          <caption>Transactions de l'évènement : {{event}}</caption>
+          <caption><strong>Transactions de l'évènement : {{event}}</strong></caption>
           <thead>
             <th>Identifiant</th>
             <th>Merchant</th>
