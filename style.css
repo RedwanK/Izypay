@@ -14,10 +14,5 @@ li:hover
 
 .affiche
 {
-  display : inline-block;
-}
-
-body
-{
-  background-color:white;
+  display : inline;
 }
