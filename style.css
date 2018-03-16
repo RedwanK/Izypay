@@ -1,18 +1,48 @@
 .spacer
 {
-  margin-top: 3%;
-}
 
+  margin-top: 2%;
+
+}
+ul{
+  padding-top: 6.5em;
+}
+{
+  margin-top: 0;
+}
 li:hover
 {
   cursor:pointer;
+}
+.btn-primary{
+color: lightgray;
+}
+.form-control
+{
+  margin-top:0;
+  width:52%;
+  display:inline-block;
+}
+.cliquable
+{
+  border-bottom-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
 }
 .afficheNone
 {
   display : none;
 }
-
 .affiche
 {
   display : inline;
+}
+body
+{
+  background-color: #E2DCDB;
+
+}
+a
+{
+  color:black;
 }
