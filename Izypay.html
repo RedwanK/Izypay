@@ -16,13 +16,15 @@
   </header>
   <body ng-app="Izypay" ng-controller="IzypayCtrl">
     <div class="container">
-        <ul class="nav nav-tabs spacer">
+      <img src="./logo.png" alt="Logo Izypay" class="img-responsive" style="float : right">
+      <img src="./logo_iut.png" alt="Logo IUT" class="img-responsive" style="float : left">
+        <ul class="navbar nav nav-tabs spacer" >
           <li class="cliquable" ng-class="{active: select==1}"><a ng-click="selectionTout()">Toutes les transactions</a></li>
           <li class="cliquable" ng-class="{active: select==5}"><a ng-click="selection5()">Les 5 évènements ayant le plus de transactions</a></li>
         </ul>
         <input type="text" ng-model="filtreP" placeholder="Recherche par mot-clé" class="spacer form-control">
         <div class="afficheNone" ng-class="{affiche : select==1}">
-        <table class="table table-striped spacer">
+        <table class="table table-striped spacer ">
           <thead>
             <tr class="spacer">
               <th>Identifiant</th>
