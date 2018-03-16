@@ -1051,5 +1051,10 @@ var triMax = function(){
 
         return tab;
         }
-
+$scope.tab=triMax();
+var base=0;
+$scope.increment= function(){
+  $scope.filtreT=tab[base];
+  base++;
+}
 });
