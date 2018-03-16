@@ -7,3 +7,12 @@ li:hover
 {
   cursor:pointer;
 }
+.afficheNone
+{
+  display : none;
+}
+
+.affiche
+{
+  display : inline-block;
+}
