@@ -18,7 +18,7 @@
           <li class="cliquable" ng-class="{active: select==5}"><a ng-click="selection5()">Les 5 évènements ayant le plus de transactions</a></li>
         </ul>
         <input type="text" ng-model="filtreP" placeholder="Recherche par mot-clé" class="spacer form-control">
-        {{max}}
+        <div class="afficheNone" ng-class="{affiche : select==1}">
         <table class="table table-striped spacer">
           <thead>
             <tr class="spacer">
@@ -51,8 +51,43 @@
             </tr>
           </tbody>
         </table>
+      </div>
+      <div class="afficheNone spacer" ng-class="{affiche : select==5}">
 
+        <table class="table" ng-repeat="event in tab" >
+          <caption>Transactions de l'évènement : {{event}}</caption>
+          <script type="text/javascript" src="izypay.js">$scope.increment();</script>
+          filtre : {{filtreT}}
+          <thead>
+            <th>Identifiant</th>
+            <th>Merchant</th>
+            <th>Terminal</th>
+            <th>Status</th>
+            <th>Identifiant carte</th>
+            <th>Type de carte</th>
+            <th>Montant</th>
+            <th>Devise</th>
+            <th>Pays</th>
+            <th>Date</th>
+          </thead>
+          <tbody>
+            <tr ng-repeat="transac in event">
+              <td>{{transac.id}}</td>
+              <td>{{transac.event_name}}</td>
+              <td>{{transac.merchant}}</td>
+              <td>{{transac.terminal}}</td>
+              <td>{{transac.status}}</td>
+              <td>{{transac.card_id}}</td>
+              <td>{{transac.card_type}}</td>
+              <td>{{transac.amount}}</td>
+              <td>{{transac.currency}}</td>
+              <td>{{transac.country}}</td>
+              <td>{{transac.created}}</td>
+            </tr>
+          </tbody>
+        </table>
 
+      </div>
 
     </div>
 
